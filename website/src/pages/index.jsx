@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import Card from "@/components/Card";
+import Menu from "@/components/Menu";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -16,11 +16,7 @@ export default function Home() {
         />
       </div>
       <section className="max-w-5xl mx-auto mt-8">
-        <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 justify-center items-center gap-5 px-4">
-          <Card name={"ribs"} price={12.99} />
-          <Card name={"ribs"} price={12.99} />
-          <Card name={"ribs"} price={12.99} />
-        </div>
+        <Menu />
       </section>
       <section className="md:max-w-5xl max-w-[85%]  group mx-auto mt-8 grid sm:grid-cols-2">
         <div className="w-full aspect-square overflow-hidden">
@@ -43,6 +39,35 @@ export default function Home() {
         </div>
       </section>
       
+
+<footer className="bg-white   m-4">
+    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+            
+                <img src="/logo.jpg" className="md:h-12 h-8" alt="Flowbite Logo" />
+                
+           
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+        <span className="block text-sm text-gray-500 sm:text-center ">© 2024 RodriguezBBQ. All Rights Reserved.</span>
+    </div>
+</footer>
+
+
    </main>
   );
 }
