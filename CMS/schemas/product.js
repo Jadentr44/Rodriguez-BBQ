@@ -12,6 +12,11 @@ export default {
       name: 'price',
       type: 'number',
       title: 'Price'
+    },
+    {
+      name: 'deal',
+      type: 'number',
+      title: 'Deal'
     },{
       name: 'img',
       type: 'image',

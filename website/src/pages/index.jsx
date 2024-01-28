@@ -18,7 +18,7 @@ export default function Home() {
       <section className="max-w-5xl mx-auto mt-8">
         <Menu />
       </section>
-      <section className="md:max-w-5xl max-w-[85%]  group mx-auto mt-8 grid sm:grid-cols-2">
+      <section className="md:max-w-5xl max-w-[85%]   mx-auto mt-8 grid sm:grid-cols-2">
         <div className="w-full aspect-square overflow-hidden">
           <img
             className=" aspect-square group-hover:scale-110 group-hover:brightness-75 transition-all duration-500 object-cover "
@@ -26,21 +26,21 @@ export default function Home() {
             alt=""
           />
         </div>
-        <div className="h-full  flex flex-col p-6 items-center justify-center">
+        <div className="h-full  flex flex-col p-6 md:px-6 px-0 items-center justify-center">
           <div>
             <h3 className="md:text-4xl text-2xl font-semibold">Catering Services</h3>
             <h4 className="md:text-xl my-2">
             We provide catering services for a wide range of events, spanning from birthday celebrations to corporate meetings
             </h4>
-            <button className="px-4 py-1 border-2 rounded-md md:text-lg">
-              Contact
-            </button>
+            <button className="px-4 py-1 border-2 w-1/2 border-red-600 bg-red-600 text-white hover:bg-white hover:text-red-600 rounded-lg text-lg font-semibold">
+            Contact
+          </button>
           </div>
         </div>
       </section>
       
 
-<footer className="bg-white   m-4">
+<footer className="   m-4">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
             
