@@ -15,9 +15,12 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: #FAF9F6	 ;
+
 }
 .quantity::-webkit-outer-spin-button,
 .quantity::-webkit-inner-spin-button {

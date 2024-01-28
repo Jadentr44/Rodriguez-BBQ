@@ -15,10 +15,10 @@ export default function Home() {
           alt=""
         />
       </div>
-      <section className="max-w-5xl mx-auto mt-8">
+      <section id="menu" className="max-w-5xl mx-auto md:pt-24 pt-24">
         <Menu />
       </section>
-      <section className="md:max-w-5xl max-w-[85%]   mx-auto mt-8 grid sm:grid-cols-2">
+      <section id="catering" className="md:max-w-5xl max-w-[85%] pt-20   mx-auto mt-8 grid sm:grid-cols-2">
         <div className="w-full aspect-square overflow-hidden">
           <img
             className=" aspect-square group-hover:scale-110 group-hover:brightness-75 transition-all duration-500 object-cover "
