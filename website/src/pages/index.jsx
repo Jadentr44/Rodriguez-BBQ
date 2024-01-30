@@ -18,23 +18,42 @@ export default function Home() {
       <section id="menu" className="max-w-5xl mx-auto md:pt-24 pt-24">
         <Menu />
       </section>
-      <section id="catering" className="md:max-w-5xl max-w-[85%] pt-20   mx-auto mt-8 grid sm:grid-cols-2">
-        <div className="w-full aspect-square overflow-hidden">
+
+      <section id="catering" className="md:max-w-5xl max-w-[85%] pt-20   mx-auto  flex sm:flex-row flex-col items-center">
+        <div className="sm:w-1/2 aspect-square overflow-hidden">
           <img
             className=" aspect-square group-hover:scale-110 group-hover:brightness-75 transition-all duration-500 object-cover "
             src="https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/407566919_10160557919843725_5411074778462714366_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=kVCOHt7MqCwAX-Qz2in&_nc_ht=scontent-dfw5-2.xx&oh=00_AfDOXzZiNhljuiONr2tl9OTSAbX6Sxu9WV_N5DeHdoy2rg&oe=65B880D5"
             alt=""
           />
         </div>
-        <div className="h-full  flex flex-col p-6 md:px-6 px-0 items-center justify-center">
+        <div className="h-full sm:w-1/2  flex flex-col p-6 md:px-6 px-0 items-center justify-center">
           <div>
             <h3 className="md:text-4xl text-2xl font-semibold">Catering Services</h3>
             <h4 className="md:text-xl my-2">
-            We provide catering services for a wide range of events, spanning from birthday celebrations to corporate meetings
+            We provide catering services for a wide range of events, spanning from birthday celebrations to corporate meetings.
             </h4>
             <button className="px-4 py-1 border-2 w-1/2 border-red-600 bg-red-600 text-white hover:bg-white hover:text-red-600 rounded-lg text-lg font-semibold">
             Contact
           </button>
+          </div>
+        </div>
+      </section>
+      <section id="local" className="md:max-w-5xl max-w-[85%] pt-20   mx-auto  flex sm:flex-row-reverse flex-col items-center">
+        <div className="sm:w-1/2 aspect-square overflow-hidden">
+          <img
+            className=" aspect-square group-hover:scale-110 group-hover:brightness-75 transition-all duration-500 object-cover "
+            src="local.jpg"
+            alt=""
+          />
+        </div>
+        <div className="h-full sm:w-1/2 sm:text-right flex flex-col p-6 md:px-6 px-0 items-center justify-center">
+          <div>
+            <h3 className="md:text-4xl text-2xl font-semibold">Locally Owned</h3>
+            <h4 className="md:text-xl my-2">
+            locally owned and deeply rooted in our community, where every dish is a celebration of our shared spirit and tradition, offering an authentic and heartwarming dining experience
+            </h4>
+            
           </div>
         </div>
       </section>
