@@ -21,10 +21,10 @@ function Card({ name, price, img, deal }) {
      <div className="flex flex-row sm:flex-col">
       <img className=" aspect-square  object-cover w-1/4 sm:w-full  " src={img} alt="" />
 
-      <div className="sm:px-4 px-2 ">
+      <div className="sm:px-4 px-2 flex flex-col justify-around ">
 
         <h2 className="sm:text-3xl text-2xl">{name}</h2>
-        <h3 className=" sm:text-2xl text-xl  mb-4">
+        <h3 className=" sm:text-2xl text-xl  sm:mb-4">
           {deal ? (
             <>
               ${deal}
