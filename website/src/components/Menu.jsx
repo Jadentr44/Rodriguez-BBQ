@@ -17,11 +17,11 @@ function Card({ name, price, img, deal }) {
     if (!add && amount > 0) quantity.current.value--;
   }
   return (
-    <div className=" max-w-xs overflow-hidden   bg-white w-full mx-auto shadow-md border-[1px] rounded-lg  ">
+    <div className=" max-w-sm overflow-hidden   bg-white w-full mx-auto shadow-md border-[1px] rounded-lg  ">
      <div className="flex flex-row sm:flex-col">
       <img className=" aspect-square  object-cover w-1/4 sm:w-full  " src={img} alt="" />
 
-      <div className="px-4 ">
+      <div className="sm:px-4 px-2 ">
 
         <h2 className="sm:text-3xl text-2xl">{name}</h2>
         <h3 className=" sm:text-2xl text-xl  mb-4">
@@ -85,7 +85,7 @@ export default function Menu({query}) {
     getProducts();
   }, []);
   return (
-    <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 justify-center items-center gap-5 px-4">
+    <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 justify-center items-center gap-5 ">
       {productsData ? (
         <>
           {productsData.map((data, i) => {

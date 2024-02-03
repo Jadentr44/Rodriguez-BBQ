@@ -6,7 +6,7 @@ export default function menu() {
   return (
     <main>
       <Navbar />
-      <section className='mt-0 md:mt-24 max-w-6xl px-8 mx-auto'>
+      <section className='mt-4 md:mt-24 max-w-6xl px-8 mx-auto'>
 
       <div className='flex items-center mb-4'>
         <div className='w-8 h-1 mr-2  bg-red-600'></div>
