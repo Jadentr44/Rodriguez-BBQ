@@ -27,7 +27,7 @@ export default function Home() {
             alt=""
           />
         </div>
-        <div className="h-full sm:w-1/2  flex flex-col p-6 md:px-6 px-0 items-center justify-center">
+        <div className="h-full sm:w-1/2  flex flex-col p-6 sm:px-6 px-0 items-center justify-center">
           <div>
             <h3 className="md:text-4xl text-2xl font-semibold">Catering Services</h3>
             <h4 className="md:text-xl my-2">
@@ -47,7 +47,7 @@ export default function Home() {
             alt=""
           />
         </div>
-        <div className="h-full sm:w-1/2 sm:text-right flex flex-col p-6 md:px-6 px-0 items-center justify-center">
+        <div className="h-full sm:w-1/2 sm:text-right flex flex-col p-6 sm:px-6 px-0 items-center justify-center">
           <div>
             <h3 className="md:text-4xl text-2xl font-semibold">Locally Owned</h3>
             <h4 className="md:text-xl my-2">

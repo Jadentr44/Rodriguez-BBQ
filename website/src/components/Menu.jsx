@@ -17,11 +17,14 @@ function Card({ name, price, img, deal }) {
     if (!add && amount > 0) quantity.current.value--;
   }
   return (
-    <div className=" md:max-w-sm max-w-[85%] bg-white w-full mx-auto shadow-md border-[1px] rounded-lg  ">
-      <img className=" aspect-square  object-cover  " src={img} alt="" />
-      <div className="p-4">
-        <h2 className="text-2xl font-">{name}</h2>
-        <h2 className="text-2xl  my-2">
+    <div className=" max-w-sm overflow-hidden   bg-white w-full mx-auto shadow-md border-[1px] rounded-lg  ">
+     <div className="flex flex-row sm:flex-col">
+      <img className=" aspect-square  object-cover w-1/4 sm:w-full  " src={img} alt="" />
+
+      <div className="px-2 text-2xl">
+
+        <h2 className="">{name}</h2>
+        <h2 className="  my-2">
           {deal ? (
             <>
               ${deal}
@@ -31,11 +34,16 @@ function Card({ name, price, img, deal }) {
             </>
           ) : (
             <>${price}</>
-          )}
+            )}
         </h2>
-        <div className="flex  gap-4">
+            </div>
+            </div>
+        <div className="flex p-2   gap-4">
           <div className="text-xl w-1/2 flex border-[1px] rounded-lg  border-black overflow-hidden">
-            <button className="font-bold  bg-gray-100 px-3 border-r-[1px] border-black" onClick={() => quantityChange(false)}>
+            <button
+              className="font-bold  bg-gray-100 px-3 border-r-[1px] border-black"
+              onClick={() => quantityChange(false)}
+            >
               -
             </button>
             <input
@@ -45,7 +53,10 @@ function Card({ name, price, img, deal }) {
               defaultValue={0}
               type="number"
             />
-            <button className="font-bold  bg-gray-100 px-3 border-l-[1px] border-black" onClick={() => quantityChange(true)}>
+            <button
+              className="font-bold  bg-gray-100 px-3 border-l-[1px] border-black"
+              onClick={() => quantityChange(true)}
+            >
               +
             </button>
           </div>
@@ -53,7 +64,7 @@ function Card({ name, price, img, deal }) {
             Order
           </button>
         </div>
-      </div>
+     
     </div>
   );
 }
