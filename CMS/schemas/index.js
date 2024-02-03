@@ -1,2 +1,3 @@
-import product from "./product"
-export const schemaTypes = [product]
+import main from "./main"
+import side from "./side"
+export const schemaTypes = [main,side]

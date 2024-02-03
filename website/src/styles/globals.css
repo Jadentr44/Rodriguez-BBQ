@@ -32,3 +32,16 @@ body{
 .quantity[type=number] {
   -moz-appearance: textfield;
 }
+h2,button{
+  font-family: var(--bubblegumSans);
+}
+h3{
+  
+  font-family: var(--tinos);
+}
+.home-heading{
+  @apply md:text-5xl text-3xl font-semibold
+}
+.home-button{
+  @apply px-4 py-1 border-2 w-1/2 border-red-600 bg-red-600 text-white hover:bg-white hover:text-red-600 rounded-lg text-lg md:text-2xl font-semibold
+}

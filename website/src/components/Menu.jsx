@@ -17,14 +17,14 @@ function Card({ name, price, img, deal }) {
     if (!add && amount > 0) quantity.current.value--;
   }
   return (
-    <div className=" max-w-sm overflow-hidden   bg-white w-full mx-auto shadow-md border-[1px] rounded-lg  ">
+    <div className=" max-w-xs overflow-hidden   bg-white w-full mx-auto shadow-md border-[1px] rounded-lg  ">
      <div className="flex flex-row sm:flex-col">
       <img className=" aspect-square  object-cover w-1/4 sm:w-full  " src={img} alt="" />
 
-      <div className="px-2 text-2xl">
+      <div className="px-4 ">
 
-        <h2 className="">{name}</h2>
-        <h2 className="  my-2">
+        <h2 className="sm:text-3xl text-2xl">{name}</h2>
+        <h3 className=" sm:text-2xl text-xl  mb-4">
           {deal ? (
             <>
               ${deal}
@@ -35,10 +35,10 @@ function Card({ name, price, img, deal }) {
           ) : (
             <>${price}</>
             )}
-        </h2>
+        </h3>
             </div>
             </div>
-        <div className="flex p-2   gap-4">
+        <div className="flex p-4 sm:pt-0   gap-4">
           <div className="text-xl w-1/2 flex border-[1px] rounded-lg  border-black overflow-hidden">
             <button
               className="font-bold  bg-gray-100 px-3 border-r-[1px] border-black"
@@ -69,11 +69,11 @@ function Card({ name, price, img, deal }) {
   );
 }
 
-export default function Menu() {
+export default function Menu({query}) {
   const [productsData, setData] = useState(undefined);
   useEffect(() => {
     async function getProducts() {
-      let products = await client.fetch(`*[_type == "product"]{
+      let products = await client.fetch(`*[_type == "${query}"]{
         name,
         price,
         deal,
